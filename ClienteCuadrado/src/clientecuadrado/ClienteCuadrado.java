@@ -48,8 +48,7 @@ public class ClienteCuadrado {
             writer.println("Esto lo envio desde Cliente"); 
             String respuesta = reader.readLine();
             System.out.println("Respuesta del server: " + "Hola, " + clientName + "!");
-            System.out.println("                                      " + "Este es tu numero: " + 
-                    clientNumber + "!");
+            System.out.println("Este es tu numero: " + clientNumber + "!");
             
             //cerrar conexion
             socket.close();

@@ -10,8 +10,7 @@ import java.net.*;
  *
  * @author steph
  */
-public class ServerSocket {
-
+public class ServerSocketParcial {
 
     /**
      * @param args the command line arguments
@@ -24,10 +23,9 @@ public class ServerSocket {
             Socket socketCliente = serverSocket.accept();
             System.out.println("Cliente conectado desde: "
                     + socketCliente.getInetAddress());
-            new Thread(new ManejadorClientes(socketCliente)).start();
+            new Thread(new ManejadorCliente(socketCliente)).start();
         }
 
-        
     }
     catch(IOException e){
         System.out.println(e);

@@ -36,7 +36,7 @@ public class ManejadorCliente implements Runnable{
             LocalDateTime fechaHora = LocalDateTime.now();
             System.out.println("Fecha y hora del proceso: " + fechaHora);
            
-            writer.println("Hola, " + nombreCliente + "!");  
+            writer.println("Bienvenido, " + nombreCliente + "!");  
             writer.println("El numero ingresado al cuadrado es: " + operacion);
             writer.println(fechaHora);
             socketCliente.close();
